@@ -23,10 +23,10 @@ public class AddNewComputerStepDefs extends BaseSteps {
     }
 
     @When("^you press the Add a new computer button$")
-    public void you_press_the_Add_a_new_computer_button()throws Throwable {
+    public void you_press_the_Add_a_new_computer_button(){
 
         home.GoToMenu(1);
-        Thread.sleep(3000);
+
     }
 
     @Then("^title and loading form is displayed$")
@@ -35,11 +35,10 @@ public class AddNewComputerStepDefs extends BaseSteps {
     }
 
     @When("^you enter \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\" and \"([^\"]*)\"$")
-    public void you_enter_and(String arg1, String arg2, String arg3, String arg4) throws Throwable{
+    public void you_enter_and(String arg1, String arg2, String arg3, String arg4){
 
         addNewComputer = new AddNewComputerPageObject(driver);
         addNewComputer.enterComputerData(arg1,arg2,arg3,arg4);
-        Thread.sleep(3000);
     }
 
     @When("^press button Create this computer$")

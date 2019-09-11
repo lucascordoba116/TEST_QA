@@ -47,9 +47,8 @@ public class DeleteComputerStepDefs extends BaseSteps {
     }
 
     @When("^you press the Delete button$")
-    public void youPressTheDeleteButton() throws Throwable{
+    public void youPressTheDeleteButton() {
         editComputer.deleteComputer();
-    Thread.sleep(3000);
     }
 
     @Then("^the message that the computer was deleted is displayed$")
