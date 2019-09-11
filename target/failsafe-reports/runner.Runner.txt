@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: runner.Runner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 68.576 s <<< FAILURE! - in runner.Runner
+Acceso correcto a Prevenet(Acceso a Prevenet)  Time elapsed: 37.196 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Credenciales [Inc]orrectas> but was:<Credenciales [C]orrectas>
+
